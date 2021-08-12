@@ -27,7 +27,9 @@ main{
 }
 
 .user{
+    margin-top: 40px;
     text-align: center;
+    
 }
 .imguser{
     width: 130px;
@@ -35,26 +37,75 @@ main{
     border-radius: 50%;
     margin: 0.5rem;
     cursor: pointer;
+    border: 2.5px solid rgb(20, 70, 90);
 }
 .links{
+    text-align: center;
+    display:flex;
     color: white;
     text-align: center;
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+.links :hover{
+    transform:translateY(-5px);
 }
 
 .link{
-
     text-align: center;
     display: flex;
     margin: 0.5rem 1rem;
     align-items: center;
     justify-content: center;
     background: linear-gradient(to left top, rgba(255,255,255,0.8),
-                                            rgba(255,255,255,0.3));
+                                            rgba(212, 218, 223, 0.3));
                                             border-radius: 2%;
     padding: 1rem;
     text-decoration: none;
+    width: 300px;
+    font-size: 19px;  
+    transition: 0.5s;  
+    border-radius: 10px;
+    margin: 10px;
+    /* border: 3px dotted blue; */
+
+}
+
+.link :hover{
+    color: rgba(255, 255, 255, 0.63);
+    transform: none;
+    
 }
 .link a{
     text-decoration: none;
-    color:aliceblue;
+    color:rgb(10, 31, 49);
+}
+
+@media screen and (max-width: 768px) {
+    .link{
+        width: 60%;
+        transition: 0.5s;
+    }
+}
+
+.log{   
+    position:relative;
+    width: 30px;
+    height:30px;
+    margin-left: 15px;
+}
+
+footer{
+    display: inline-block;
+    position:absolute;
+    bottom: 5%;
+    text-align: center;
+    justify-content: center;
+
+    width: 100%;
 }
